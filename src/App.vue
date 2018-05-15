@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
     <ul class="navigation">
       <li v-for="(m,n) in pageArr" v-bind:key="m.i" v-on:click="change(m.i)">
