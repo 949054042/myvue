@@ -1,11 +1,11 @@
 <template>
-    <div class="Friend">
-Friend
+    <div class="Recommend">
+Recommend
     </div>
 </template>
 <script>
     export default{
-        name:"Friend",
+        name:"Recommend",
         props:[],
         watch:{
 

@@ -64,6 +64,31 @@ export default {
   methods:{
     change:function(m){
       this.flag=m;
+      if(m==0){
+        this.$router.push({
+          name:"Find"
+        })
+      }
+      if(m==1){
+        this.$router.push({
+          name:"Video"
+        })
+      }
+      if(m==2){
+        this.$router.push({
+          name:"My"
+        })
+      }
+      if(m==3){
+        this.$router.push({
+          name:"Friend"
+        })
+      }
+      if(m==4){
+        this.$router.push({
+          name:"Account"
+        })
+      }
     }
   }
 }

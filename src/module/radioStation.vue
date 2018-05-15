@@ -1,11 +1,11 @@
 <template>
-    <div class="Friend">
-Friend
+    <div class="radioStation">
+radioStation
     </div>
 </template>
 <script>
     export default{
-        name:"Friend",
+        name:"radioStation",
         props:[],
         watch:{
 
