@@ -4,7 +4,6 @@
     <router-view/>
     <ul class="navigation">
       <li v-for="(m,n) in pageArr" v-bind:key="m.id">
-       
         <p>{{m.text}}</p>
       </li>
     </ul>
