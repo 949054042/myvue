@@ -103,6 +103,12 @@ export default {
   color: #2c3e50;
   height:100vh;
 }
+[data-dpr="1"] #app {
+     max-width:540px;
+}
+[data-dpr="2"] #app {
+     max-width:1080px;
+}
 .navigation{
   position:absolute;
   bottom:0px;
