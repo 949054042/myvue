@@ -49,6 +49,9 @@ import Header from "../components/searchBar";
     }
 </script>
 <style>
+    .Find{
+        height: 100vh;
+    }
     .checkMenu{
         height:1.28rem;
         background-color:#de4138;
