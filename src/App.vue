@@ -102,6 +102,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   max-width:540px;
+  height:100vh;
 }
 .navigation{
   position:absolute;
