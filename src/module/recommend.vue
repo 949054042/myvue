@@ -1,5 +1,5 @@
 <template>
-    <div class="Recommend">
+    <div class="Recommend"   v-on:click="say()">
         <div class="wraper">
             <findItem_01/>
         </div>
@@ -23,13 +23,20 @@ import Scroll from "iscroll"
             }
         },
         mounted:function(){
-            var iscroll=new Scroll(".Recommend")
+            var iscroll=new Scroll(".Recommend",{
+                    mouseWheel: true,
+                    scrollbars: true,
+                    click:true
+            });
+            console.dir(iscroll);
         },
         components:{
             findItem_01
         },
         methods:{
-
+            say:function(){
+                alert(90)
+            }
         }
     }
 </script>
@@ -41,7 +48,7 @@ import Scroll from "iscroll"
         left:0;
         bottom:1.2933rem;
         width:100%;
-        z-index:-10;
+        z-index:1;
     }
     .wraper{
         height:100vh;
