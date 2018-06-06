@@ -84,6 +84,7 @@
         font-size:0.32rem;
         color:#fff;
         font-family:inherit;
+        line-height:0.8rem;
     }
     .center{
         width:7.147rem;
