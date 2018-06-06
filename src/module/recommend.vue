@@ -36,5 +36,6 @@ import findItem_01 from "../components/findItem_01.vue"
         left:0;
         bottom:1.2933rem;
         width:100%;
+        z-index:-10;
     }
 </style>
