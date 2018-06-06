@@ -35,6 +35,7 @@ import Scroll from "iscroll"
 </script>
 <style>
     .Recommend{
+        position: absolute;
         box-sizing:border-box;
         top:2.1rem;
         left:0;
