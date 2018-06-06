@@ -1,6 +1,6 @@
 <template>
     <div class="Find">
-Find
+        <router-view/>
     </div>
 </template>
 <script>
@@ -9,6 +9,11 @@ Find
         props:[],
         watch:{
 
+        },
+        mounted:function(){
+            this.$router.push({
+                name:"Recommend"
+            })
         },
         computed:{
 
