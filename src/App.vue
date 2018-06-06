@@ -113,7 +113,7 @@ export default {
      max-width:1080px;
 }
 .navigation{
-  position:absolute;
+  position:fixed;
   bottom:0px;
   width:100vw;
   margin:0;
