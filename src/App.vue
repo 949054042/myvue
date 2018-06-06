@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-bind:mouseover="stop()">
+  <div id="app">
     <router-view/>
     <ul class="navigation">
       <li v-for="(m,n) in pageArr" v-bind:key="m.i" v-on:click="change(m.i)">
@@ -89,9 +89,6 @@ export default {
           name:"Account"
         })
       }
-    },
-    stop:function(ev){
-      ev.preventDefault();
     }
   }
 }
