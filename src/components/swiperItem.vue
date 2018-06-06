@@ -55,7 +55,7 @@ import Swiper from "swiper/dist/js/swiper.min.js";
         background-color:#eb493c; 
     }
     .swiper-container{
-        position:absolute;
+        position:absolute !important;
         width:97.066%;
         height:3.773rem;
         left:0.12rem;
