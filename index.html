@@ -10,5 +10,8 @@
   </body>
 </html>
 <script>
-  document.querySelector('body').addEventListener('touchstart', function (ev) {event.preventDefault();});
+  function stopScrolling(event) {
+    event.preventDefault();
+  }
+document.addEventListener('touchmove',stopScrolling,false);
 </script>
