@@ -1,10 +1,12 @@
 <template>
     <div class="findItem_01">
         <swiper/>
+        <findTabBar/>
     </div>
 </template>
 <script>
 import swiper from "../components/swiperItem"
+import findTabBar from "../components/findTabBar"
     export default{
         name:"findItem_01",
         props:[],
@@ -15,7 +17,8 @@ import swiper from "../components/swiperItem"
 
         },
         components:{
-            swiper
+            swiper,
+            findTabBar
         },
         data:function(){
             return {
