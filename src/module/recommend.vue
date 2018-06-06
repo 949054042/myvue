@@ -1,6 +1,5 @@
 <template>
     <div class="Recommend">
-Recommend
     </div>
 </template>
 <script>
@@ -17,6 +16,8 @@ Recommend
             return {
 
             }
+        },
+        components:{
         },
         methods:{
 
