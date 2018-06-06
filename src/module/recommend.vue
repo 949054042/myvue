@@ -1,10 +1,13 @@
 <template>
     <div class="Recommend">
-        <findItem_01/>
+        <div class="wraper">
+            <findItem_01/>
+        </div>
     </div>
 </template>
 <script>
 import findItem_01 from "../components/findItem_01.vue"
+import Scroll from "iscroll"
     export default{
         name:"Recommend",
         props:[],
@@ -19,6 +22,9 @@ import findItem_01 from "../components/findItem_01.vue"
 
             }
         },
+        mounted:function(){
+            var iscroll=new Scroll(".Recommend")
+        },
         components:{
             findItem_01
         },
@@ -30,12 +36,13 @@ import findItem_01 from "../components/findItem_01.vue"
 <style>
     .Recommend{
         box-sizing:border-box;
-        overflow-y:auto;
-        position: absolute;
         top:2.1rem;
         left:0;
         bottom:1.2933rem;
         width:100%;
         z-index:-10;
+    }
+    .wraper{
+        height:100vh;
     }
 </style>
