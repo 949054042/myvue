@@ -12,17 +12,17 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/Find',
       name: 'Find',
       component: Find,
       children:[
         {
-          path: '/Recommend',
+          path: '/Find/Recommend',
           name: 'Recommend',
           component: Recommend,
         },
         {
-          path: '/radioStation',
+          path: '/Find/radioStation',
           name: 'RadioStation',
           component: RadioStation,
         }

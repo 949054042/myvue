@@ -36,9 +36,11 @@ import Header from "../components/searchBar";
         methods:{
             follow:function(m){
                 if(m){
-                    this.flag3=false
+                    this.flag3=false;
+                    this.$router.push("/Find/Recommend")
                 }else{
-                   this.flag3=true
+                   this.flag3=true;
+                   this.$router.push("/Find/radioStation")
                 }
             }
         }
