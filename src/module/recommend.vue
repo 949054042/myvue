@@ -25,7 +25,6 @@ import Scroll from "iscroll"
         mounted:function(){
             var iscroll=new Scroll(".Recommend",{
                     mouseWheel: true,
-                    scrollbars: true,
                     click:true
             });
             console.dir(iscroll);
@@ -35,7 +34,6 @@ import Scroll from "iscroll"
         },
         methods:{
             say:function(){
-                alert(90)
             }
         }
     }
