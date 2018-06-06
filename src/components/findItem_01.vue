@@ -31,5 +31,7 @@ import findTabBar from "../components/findTabBar"
     }
 </script>
 <style>
-
+    .findItem_01{
+        min-height:100vh;
+    }
 </style>
