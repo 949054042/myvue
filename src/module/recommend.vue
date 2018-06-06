@@ -30,5 +30,11 @@ import findItem_01 from "../components/findItem_01.vue"
 <style>
     .Recommend{
         box-sizing:border-box;
+        overflow-y:auto;
+        position: absolute;
+        top:2.1rem;
+        left:0;
+        bottom:1.2933rem;
+        width:100%;
     }
 </style>

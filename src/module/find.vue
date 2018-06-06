@@ -1,10 +1,12 @@
 <template>
     <div class="Find">
-        <Header/>
-        <div class="checkMenu">
-            <span v-on:click="follow(1)">个性推荐</span>
-            <span v-on:click="follow(0)">主播电台</span>
-            <i class="follow" v-bind:class="{follow2:flag3}"></i>
+        <div class="top">
+            <Header/>
+            <div class="checkMenu">
+                <span v-on:click="follow(1)">个性推荐</span>
+                <span v-on:click="follow(0)">主播电台</span>
+                <i class="follow" v-bind:class="{follow2:flag3}"></i>
+            </div>
         </div>
         <router-view/>
     </div>
@@ -83,5 +85,12 @@ import Header from "../components/searchBar";
     .checkMenu .follow2{
         left:6.533rem;
         top:1.013rem; 
+    }
+    .top{
+        position: fixed;
+        height:2.2133rem;
+        width:100%;
+        left:0;
+        top:0;
     }
 </style>
