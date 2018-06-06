@@ -1,12 +1,11 @@
 <template>
-    <div class="Recommend">
-        <findItem_01/>
+    <div class="findItem_02">
+findItem_02
     </div>
 </template>
 <script>
-import findItem_01 from "../components/findItem_01.vue"
     export default{
-        name:"Recommend",
+        name:"findItem_02",
         props:[],
         watch:{
 
@@ -19,16 +18,11 @@ import findItem_01 from "../components/findItem_01.vue"
 
             }
         },
-        components:{
-            findItem_01
-        },
         methods:{
 
         }
     }
 </script>
 <style>
-    .Recommend{
-        box-sizing:border-box;
-    }
+
 </style>

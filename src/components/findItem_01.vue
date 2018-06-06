@@ -1,12 +1,12 @@
 <template>
-    <div class="Recommend">
-        <findItem_01/>
+    <div class="findItem_01">
+        <swiper/>
     </div>
 </template>
 <script>
-import findItem_01 from "../components/findItem_01.vue"
+import swiper from "../components/swiperItem"
     export default{
-        name:"Recommend",
+        name:"findItem_01",
         props:[],
         watch:{
 
@@ -14,13 +14,13 @@ import findItem_01 from "../components/findItem_01.vue"
         computed:{
 
         },
+        components:{
+            swiper
+        },
         data:function(){
             return {
 
             }
-        },
-        components:{
-            findItem_01
         },
         methods:{
 
@@ -28,7 +28,5 @@ import findItem_01 from "../components/findItem_01.vue"
     }
 </script>
 <style>
-    .Recommend{
-        box-sizing:border-box;
-    }
+
 </style>
