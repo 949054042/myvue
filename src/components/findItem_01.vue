@@ -39,4 +39,9 @@ import findItem3 from "../components/findItem_03"
     .findItem_01{
         min-height:100vh;
     }
+    .findItem_01 .box_01{
+        margin-top:0.4533rem;
+        padding:0px 0.16rem;
+        box-sizing:border-box;
+    }
 </style>
