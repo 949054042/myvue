@@ -6,8 +6,11 @@
         <div class="mainContain">
             <ul class="clearfix">
                 <li>
-                    <div class="imgContain">
+                    <div class="imgContain addTitle">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
+                        <div class="Premium">
+                            付费精品
+                        </div>
                     </div>
                     <div class="textContain">
                         <p>五分钟通晓最IN4实事</p>
@@ -16,6 +19,9 @@
                 <li>
                     <div class="imgContain">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
+                        <div class="Premium">
+                            付费精品
+                        </div>
                     </div>
                     <div class="textContain">
                         <p>五分钟通晓最IN实事</p>
@@ -24,6 +30,9 @@
                 <li>
                     <div class="imgContain">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
+                        <div class="Premium">
+                            付费精品
+                        </div>
                     </div>
                     <div class="textContain">
                         <p>五分钟通晓最IN实事</p>
@@ -56,6 +65,7 @@
 <style>
     .findModule{
         margin-bottom:1.04rem;
+        position: relative;
     }
     .findModule .mainContain li{
         float:left;
@@ -80,9 +90,28 @@
         margin-bottom:0.4rem;
         font-weight:600;
     }
-      .findModule .title h3 img{
-          width:0.2133rem;
-          margin-left:0.24rem;
-          vertical-align:top;
-      }
+    .findModule .title h3 img{
+        width:0.2133rem;
+        margin-left:0.24rem;
+        vertical-align:top;
+    }
+    .imgContain{
+        position: relative;
+    }
+    .imgContain .Premium{
+        position:absolute;
+        width:1.2rem;
+        height:0.4rem;
+        border-radius:0px 0px 0.133rem 0px;
+        left:0;
+        top:0;
+        background-color:#d9362d;
+        font-size:0.2133rem;
+        color:#fff;
+        line-height:0.4rem;
+        display:none;
+    }
+    .imgContain.addTitle .Premium{
+        display:block;
+    }
 </style>
