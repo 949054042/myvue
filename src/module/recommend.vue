@@ -49,6 +49,5 @@ import Scroll from "iscroll"
         z-index:1;
     }
     .wraper{
-        height:100vh;
     }
 </style>
