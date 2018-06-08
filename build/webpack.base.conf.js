@@ -79,10 +79,17 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   },
+  //需要的插件暴露到全局
   plugins:[
       new webpack.ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery'
+    }),
+    new webpack.ProvidePlugin({
+      Swiper: 'swiper/dist/js/swiper.min.js'
+    }),
+    new webpack.ProvidePlugin({
+      Scroll: 'scroll'
     })
   ]
 }
