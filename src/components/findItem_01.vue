@@ -4,7 +4,8 @@
         <findTabBar/>
         <div class="box_01">
             <findItem3/>
-             <findItem3/>
+            <findItem3/>
+            <findItem4/>
         </div>
     </div>
 </template>
@@ -12,6 +13,7 @@
 import swiper from "../components/swiperItem"
 import findTabBar from "../components/findTabBar"
 import findItem3 from "../components/findItem_03"
+import findItem4 from "../components/findItem_04"
     export default{
         name:"findItem_01",
         props:[],
@@ -24,7 +26,8 @@ import findItem3 from "../components/findItem_03"
         components:{
             swiper,
             findTabBar,
-            findItem3
+            findItem3,
+            findItem4
         },
         data:function(){
             return {
