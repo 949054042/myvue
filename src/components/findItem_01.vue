@@ -1,9 +1,9 @@
 <template>
     <div class="findItem_01">
-        <swiper/>12
+        <swiper/>
         <findTabBar/>
         <div class="box_01">
-            <findItem3/>123
+            <findItem3/>
         </div>
     </div>
 </template>

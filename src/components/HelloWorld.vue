@@ -6,7 +6,7 @@
     <form>
       <div class="form-group">
         <div class="input-group">
-          <input type="text" placeholder="demo" class="form-control"/>1234
+          <input type="text" placeholder="demo" class="form-control"/>
         </div>
       </div>
     </form>
