@@ -1,10 +1,10 @@
 <template>
     <div class="findModule">
         <div class="title">
-            <h3>有声书</h3>
+            <h3>有声书<img src="../assets/icon/more.png"/></h3>
         </div>
         <div class="mainContain">
-            <ul>
+            <ul class="clearfix">
                 <li>
                     <div class="imgContain">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
@@ -54,6 +54,9 @@
     }
 </script>
 <style>
+    .findModule{
+        margin-bottom:1.04rem;
+    }
     .findModule .mainContain li{
         float:left;
         width:33%;
@@ -77,4 +80,9 @@
         margin-bottom:0.4rem;
         font-weight:600;
     }
+      .findModule .title h3 img{
+          width:0.2133rem;
+          margin-left:0.24rem;
+          vertical-align:top;
+      }
 </style>
