@@ -121,6 +121,7 @@ body{
   border-top:1px solid #d0d0d0;
   height:1.307rem;
   z-index:1000;
+  background-color: #fff
 }
 .navigation li{
   list-style:none;
