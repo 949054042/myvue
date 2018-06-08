@@ -10,7 +10,7 @@
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                     </div>
                     <div class="textContain">
-                        <p>五分钟通晓最IN4实事</p>
+                        <p><font>单曲</font>五分钟通晓最IN4实事</p>
                     </div>
                 </li>
                 <li>
@@ -18,7 +18,7 @@
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                     </div>
                     <div class="textContain">
-                        <p>五分钟通晓最IN实事</p>
+                        <p><font>电台</font>五分钟通晓最IN实事</p>
                     </div>
                 </li>
                 <li>
@@ -26,7 +26,7 @@
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                     </div>
                     <div class="textContain">
-                        <p>五分钟通晓最IN实事</p>
+                        <p><font>电台</font>五分钟通晓最IN实事</p>
                     </div>
                 </li>
             </ul>
@@ -68,10 +68,34 @@
     .findModule2 .mainContain .imgContain img{
         border-radius:0.0533rem;
     }
+     .findModule2 .textContain{
+         position: relative;
+     }
     .findModule2 .textContain p{
         font-size:0.32rem;
         color:#333436;
         font-family:inherit;
+        width:88%;
+        word-break:break-all;
+        line-height:0.4rem;
+        text-align: left;
+        text-indent:0.75rem;
+    }
+    .findModule2 .textContain font{
+        width:0.56rem;
+        height:0.2667rem;
+        line-height:0.2667rem;
+        border:0.0267rem solid #b86b7b;
+        font-size:0.2133rem;
+        color:#b86b7b;
+        display: inline-block;
+        text-align: center;
+        margin-right:0.12rem;
+        box-sizing:content-box;
+        position: absolute;
+        left:0;
+        top:0.0267rem;
+        text-indent:0rem;
     }
     .findModule2 .title h3{
         font-size:0.4rem;

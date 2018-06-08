@@ -81,6 +81,8 @@
         font-size:0.32rem;
         color:#333436;
         font-family:inherit;
+        width:100%;
+        word-break:break-all;
     }
     .findModule .title h3{
         font-size:0.4rem;
