@@ -4,7 +4,7 @@
           <img src="../assets/icon/mic2.png" alt="网络错误"/>
       </div>
       <div class="center" :class="{center2:flag2}">
-          <input placeholder="你是我的眼很好听哦" type="text" v-on:focus="change(1)"/>
+          <input placeholder="你是我的眼很好听哦" type="text" v-on:focus="change(1)"/>12
       </div>
       <div class="right">
             <img src="../assets/icon/enter.png" alt="网络错误" v-show="flag1"/>
