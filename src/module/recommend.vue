@@ -8,6 +8,7 @@
 <script>
 import findItem_01 from "../components/findItem_01.vue"
 import Scroll from "iscroll"
+import { setTimeout } from 'timers';
     export default{
         name:"Recommend",
         props:[],
@@ -23,11 +24,12 @@ import Scroll from "iscroll"
             }
         },
         mounted:function(){
-            var iscroll=new Scroll(".Recommend",{
-                    mouseWheel: true,
-                    click:true
-            });
-            console.dir(iscroll);
+            setTimeout(function(){
+                var iscroll=new Scroll(".Recommend",{
+                            mouseWheel: true,
+                            click:true
+                    });
+            },1000)
         },
         components:{
             findItem_01
