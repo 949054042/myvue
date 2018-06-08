@@ -10,7 +10,7 @@
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                     </div>
                     <div class="textContain">
-                        <p>五分钟通晓最IN实事</p>
+                        <p>五分钟通晓最IN4实事</p>
                     </div>
                 </li>
                 <li>
