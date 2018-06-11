@@ -2,7 +2,7 @@
     <div class="findTabBar">
         <ul class="clearfix">
             <li  v-for="(m,n) in imgArr" :key="n" >
-                <img :src="m.src"/>
+                <img :src="m.src"/>123
                 <p>{{m.text}}</p>
             </li>
         </ul>
