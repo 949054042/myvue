@@ -14,6 +14,10 @@
                  <findItem5/>
             </div>
         </div>
+        <div  class="box_02">
+            <div class="module_01">
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -43,6 +47,11 @@ import findItem5 from "../components/findItem_05"
 
             }
         },
+        mounted:function(){
+            this.$router.push({
+                
+            })
+        },
         methods:{
 
         }
@@ -68,6 +77,5 @@ import findItem5 from "../components/findItem_05"
     .module_01{
         padding:0px 0.16rem;
         padding-top:0.4rem;
-        padding-bottom:0.5333rem;
     }
 </style>

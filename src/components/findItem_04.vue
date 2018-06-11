@@ -5,7 +5,7 @@
         </div>
         <div class="mainContain">
             <ul class="clearfix">
-                <li>
+                <li @click="musicDetail()">
                     <div class="imgContain">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                     </div>
@@ -13,7 +13,7 @@
                         <p><font>单曲</font>五分钟通晓最IN4实事</p>
                     </div>
                 </li>
-                <li>
+                <li @click="musicDetail()">
                     <div class="imgContain">
                         <img src="../assets/images/poster_02.png" alt="poster"/>
                     </div>
@@ -21,7 +21,7 @@
                         <p><font>电台</font>五分钟通晓最IN实事</p>
                     </div>
                 </li>
-                <li>
+                <li @click="musicDetail()">
                     <div class="imgContain">
                         <img src="../assets/images/poster_03.png" alt="poster"/>
                     </div>
@@ -49,7 +49,11 @@
             }
         },
         methods:{
-
+            musicDetail:function(){
+                this.$router.push({
+                    name:"MusicList"
+                })
+            }
         }
     }
 </script>
@@ -61,6 +65,7 @@
     .findModule2 .mainContain li{
         float:left;
         width:33%;
+        padding-bottom:0.4rem;
     }
     .findModule2 .mainContain .imgContain{
         margin-bottom:0.2133rem;

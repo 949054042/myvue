@@ -5,7 +5,7 @@
         </div>
         <div class="mainContain">
             <ul class="clearfix">
-                <li>
+                <li @click="musicDetail()">
                     <div class="imgContain addTitle">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                         <div class="Premium">
@@ -16,7 +16,7 @@
                         <p>五分钟通晓最IN4实事</p>
                     </div>
                 </li>
-                <li>
+                <li @click="musicDetail()">
                     <div class="imgContain">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                         <div class="Premium">
@@ -27,7 +27,7 @@
                         <p>五分钟通晓最IN实事</p>
                     </div>
                 </li>
-                <li>
+                <li @click="musicDetail()">
                     <div class="imgContain">
                         <img src="../assets/images/poster_01.png" alt="poster"/>
                         <div class="Premium">
@@ -58,7 +58,11 @@
             }
         },
         methods:{
-
+            musicDetail:function(){
+                this.$router.push({
+                    name:"MusicList"
+                })
+            }
         }
     }
 </script>

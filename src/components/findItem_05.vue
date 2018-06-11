@@ -1,7 +1,7 @@
 <template>
     <div class="findItem5">
         <div class="left">
-            <video-player    :options="playerOptions"  :playsinline="true"/>
+            <video-player    :options="playerOptions"  :playsinline="true"  ref="videoPlayer"/>
         </div>
         <div class="right">
             <div class="title">
@@ -11,7 +11,7 @@
                 <img src="../assets/images/stop.png"/><span>48090</span><img src="../assets/images/msg.png"/><span>110</span>
             </div>
             <div class="from">
-                <img src="../assets/images/video_poster.png" alt='网络错误'/><span>全球音悦台</span>
+                <img src="../assets/images/video_poster.png" alt='网络错误'/><span>全球音悦台</span><img src="../assets/images/del.png" alt='删除单元' class='del'/>
             </div>
         </div>
     </div>
@@ -47,22 +47,14 @@
             }
         },
         beforeCreate:function(){
-            console.log(1)
         },
         created:function(){
-            console.log(2)
         },
         beforeMount:function(){
-            console.log(3)
         },
         mounted:function(){
         },
         updated:function(){
-        },
-        beforeRouteEnter:function(to,form,next){
-            var myVideo=VideoJs("#video_01",{
-                poster:require("../assets/images/video_poster.png")
-            });
         },
         methods:{
 
@@ -160,5 +152,11 @@
        }
         .findItem5 .from span{
             display:inline-block;
+        }
+        .findItem5 .from img.del{
+            width:0.2133rem;
+           height:0.2133rem;
+           float:right;
+            margin-top: 0.165rem;
         }
 </style>
