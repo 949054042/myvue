@@ -8,6 +8,8 @@
                 <findItem3/>
                 <findItem4/>
             </div>
+        </div>
+        <div  class="box_02">
             <div class="module_01">
                  <findItem5/>
             </div>
@@ -58,8 +60,14 @@ import findItem5 from "../components/findItem_05"
         background-color:#fff;
         box-sizing:border-box;
     }
+    .box_02{
+        border-top:0.1333rem solid #f0f1f3;
+        background-color:#fff;
+        box-sizing:border-box;
+    }
     .module_01{
         padding:0px 0.16rem;
         padding-top:0.4rem;
+        padding-bottom:0.5333rem;
     }
 </style>
