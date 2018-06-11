@@ -3,7 +3,7 @@
         <swiper/>12
         <findTabBar/>
         <div class="box_01">
-            <findItem3/>1345122
+            <findItem3/>13451234
             <findItem3/>1234
             <findItem4/>
         </div>
