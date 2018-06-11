@@ -1,7 +1,7 @@
 <template>
     <div class="findItem5">
         <div class="left">
-            <video id="video_01" src="../assets/video/zcx-huanghun.mp4" controls></video>
+            <video id="video_01" src="../assets/video/zcx-huanghun.mp4" control></video>
         </div>
         <div class="right">
             <div class="title">
@@ -17,6 +17,7 @@
     </div>
 </template>
 <script>
+ import { setTimeout } from 'timers';
     export default{
         name:"findItem5",
         props:[],
@@ -33,10 +34,12 @@
                 ]
             }
         },
-        mounted:function(){
-            var myVideo=VideoJs("#video_01",{
-                controls:true
-            })
+       mounted:function(){
+           setTimeout(function(){
+                var myVideo=VideoJs("#video_01",{
+                    control:true
+                })
+           },500)
         },
         methods:{
 
