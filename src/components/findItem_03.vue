@@ -1,7 +1,7 @@
 <template>
     <div class="findModule">
         <div class="title">
-            <h3>有声书</h3>123
+            <h3>有声书</h3>
         </div>
         <div class="mainContain">
             <ul class="clearfix">

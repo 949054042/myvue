@@ -90,6 +90,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       Scroll: 'scroll'
+    }),
+    new webpack.ProvidePlugin({
+      VideoJs: 'video.js/dist/video.min.js'
     })
   ]
 }

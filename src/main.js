@@ -11,6 +11,7 @@ import 'reset.css'
 import 'lib-flexible'
 import Mint from 'mint-ui';
 import 'swiper/dist/css/swiper.min.css';
+import 'video.js/dist/video-js.min.css';
 Vue.use(Mint);
 Vue.config.productionTip = false
 

@@ -1,11 +1,16 @@
 <template>
     <div class="findItem_01">
-        <swiper/>12
+        <swiper/>
         <findTabBar/>
         <div class="box_01">
-            <findItem3/>1
-            <findItem3/>1234
-            <findItem4/>
+            <div class="module_01">
+                <findItem3/>
+                <findItem3/>
+                <findItem4/>
+            </div>
+            <div class="module_01">
+                 <findItem5/>
+            </div>
         </div>
     </div>
 </template>
@@ -50,15 +55,11 @@ import findItem5 from "../components/findItem_05"
         box-sizing:border-box;
     }
     .box_01{
+        background-color:#fff;
+        box-sizing:border-box;
     }
-     .module_01{
-        margin-bottom:0.5866rem;
-        background-color:#fff;
-     }
-    .module_02{
-        background-color:#fff;
+    .module_01{
         padding:0px 0.16rem;
         padding-top:0.4rem;
-        box-sizing:border-box;
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="findItem_02">12
+    <div class="findItem_02">
 findItem_02
     </div>
 </template>
