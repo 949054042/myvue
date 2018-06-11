@@ -1,7 +1,7 @@
 <template>
     <div class="findModule">
         <div class="title">
-            <h3>有声书<img src="../assets/icon/more.png"/></h3>
+            <h3>有声书</h3>123
         </div>
         <div class="mainContain">
             <ul class="clearfix">
