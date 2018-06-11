@@ -49,7 +49,7 @@
     .findTabBar{
         height:2.7467rem;
         border-bottom:1px solid #e1e2e4;
-
+        background-color:#fff;
     }
     .findTabBar ul{
     }

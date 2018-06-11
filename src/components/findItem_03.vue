@@ -66,6 +66,7 @@
     .findModule{
         margin-bottom:1.04rem;
         position: relative;
+        background-color:#fff;
     }
     .findModule .mainContain li{
         float:left;
