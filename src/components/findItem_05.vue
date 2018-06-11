@@ -37,7 +37,8 @@
        mounted:function(){
            setTimeout(function(){
                 var myVideo=VideoJs("#video_01",{
-                    control:true
+                    control:true,
+                    poster:"../assets/images/video_poster.png"
                 })
            },500)
         },
