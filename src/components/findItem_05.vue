@@ -1,7 +1,7 @@
 <template>
     <div class="findItem5">
         <div class="left">
-            <video-player    :options="playerOptions"/>
+            <video-player    :options="playerOptions"  :playsinline="true"/>
         </div>
         <div class="right">
             <div class="title">
