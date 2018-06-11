@@ -3,14 +3,9 @@
         <swiper/>
         <findTabBar/>
         <div class="box_01">
-            <div class="module_01">
-                <findItem3/>13456
-                <findItem3/>
-                <findItem4/>
-            </div>
-            <div class="module_02">
-                <findItem5/>
-            </div>
+            <findItem3/>1234
+            <findItem3/>
+            <findItem4/>
         </div>
     </div>
 </template>
