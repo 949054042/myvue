@@ -92,7 +92,7 @@ module.exports = {
       Scroll: 'scroll'
     }),
     new webpack.ProvidePlugin({
-      VideoJs: 'video.js/dist/video.min.js'
+      VideoJs: 'vue-video-player'
     })
   ]
 }

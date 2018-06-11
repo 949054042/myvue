@@ -1,7 +1,7 @@
 <template>
     <div class="findItem5">
         <div class="left">
-            <video id="video_01" src="../assets/video/zcx-huanghun.mp4"></video>
+            <video-player    :options="playerOptions"/>
         </div>
         <div class="right">
             <div class="title">
@@ -29,17 +29,40 @@
         },
         data:function(){
             return {
+                playerOptions: {
+                    // videojs options
+                    muted: true,
+                    language: 'en',
+                    playbackRates: [0.7, 1.0, 1.5, 2.0],
+                    sources: [{
+                        type: "video/mp4",
+                        src: require("../assets/video/zcx-huanghun.mp4")
+                    }],
+                    poster: require("../assets/images/video_poster.png")
+                },
                 videoArr:[
 
-                ]
+                ],
+                obj:{}
             }
         },
-       mounted:function(){
-           setTimeout(function(){
-                var myVideo=VideoJs("#video_01",{
-                    poster:require("../assets/images/video_poster.png")
-                })
-           },500)
+        beforeCreate:function(){
+            console.log(1)
+        },
+        created:function(){
+            console.log(2)
+        },
+        beforeMount:function(){
+            console.log(3)
+        },
+        mounted:function(){
+        },
+        updated:function(){
+        },
+        beforeRouteEnter:function(to,form,next){
+            var myVideo=VideoJs("#video_01",{
+                poster:require("../assets/images/video_poster.png")
+            });
         },
         methods:{
 
@@ -61,7 +84,7 @@
         border:none;
         height: 3.1866rem;
     }
-    .findItem5 .video_01-dimensions {
+    .findItem5 .vjs_video_1219-dimensions{
         width: 100%;
         height: 100%;
         position: relative;

@@ -11,8 +11,10 @@ import 'reset.css'
 import 'lib-flexible'
 import Mint from 'mint-ui';
 import 'swiper/dist/css/swiper.min.css';
-import 'video.js/dist/video-js.min.css';
+import 'video.js/dist/video-js.css'
+import VueVideoPlayer from "vue-video-player"
 Vue.use(Mint);
+Vue.use(VueVideoPlayer);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
