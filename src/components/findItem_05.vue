@@ -78,16 +78,11 @@
         width:3.1733rem;
         height:3.1866rem;
     }
-    .findItem5 .left video{
-        width:100%;
-        object-fit:fill;
-        border:none;
-        height: 3.1866rem;
-    }
-    .findItem5 .vjs_video_1219-dimensions{
+    .findItem5 .vjs_video_3-dimensions{
         width: 100%;
-        height: 100%;
+        height: 3.1866rem;
         position: relative;
+        object-fit:fill;
      }
     .findItem5 .right{
         float:left;
