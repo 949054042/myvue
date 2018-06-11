@@ -15,7 +15,7 @@
                 </li>
                 <li>
                     <div class="imgContain">
-                        <img src="../assets/images/poster_01.png" alt="poster"/>
+                        <img src="../assets/images/poster_02.png" alt="poster"/>
                     </div>
                     <div class="textContain">
                         <p><font>电台</font>五分钟通晓最IN实事</p>
@@ -23,7 +23,7 @@
                 </li>
                 <li>
                     <div class="imgContain">
-                        <img src="../assets/images/poster_01.png" alt="poster"/>
+                        <img src="../assets/images/poster_03.png" alt="poster"/>
                     </div>
                     <div class="textContain">
                         <p><font>电台</font>五分钟通晓最IN实事</p>
@@ -55,8 +55,8 @@
 </script>
 <style>
     .findModule2{
-        margin-bottom:1.04rem;
         position: relative;
+        background-color:#fff;
     }
     .findModule2 .mainContain li{
         float:left;
