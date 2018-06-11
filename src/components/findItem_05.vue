@@ -1,7 +1,7 @@
 <template>
     <div class="findItem5">
         <div class="left">
-            <video id="video_01" src="../assets/video/zcx-huanghun.mp4" control></video>
+            <video id="video_01" src="../assets/video/zcx-huanghun.mp4" controls></video>
         </div>
         <div class="right">
             <div class="title">
@@ -37,7 +37,7 @@
        mounted:function(){
            setTimeout(function(){
                 var myVideo=VideoJs("#video_01",{
-                    control:true,
+                    controls:true,
                     poster:require("../assets/images/video_poster.png")
                 })
            },500)
