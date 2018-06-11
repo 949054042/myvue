@@ -1,10 +1,10 @@
 <template>
     <div class="findItem_01">
-        <swiper/>
+        <swiper/>12
         <findTabBar/>
         <div class="box_01">
-            <findItem3/>56789
-            <findItem3/>
+            <findItem3/>5678
+            <findItem3/>1234
             <findItem4/>
         </div>
     </div>
