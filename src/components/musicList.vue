@@ -67,14 +67,14 @@
                     </div>
                     <div class='playList'>
                         <ul>
-                            <li class='clearfix'>
+                            <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                 <div class='listNumber'>
-                                    <p>1</p>
+                                    <p>{{m.number}}</p>
                                 </div>
                                 <div class='musicDetail'>
                                     <div class='left'>
-                                        <h4>涩</h4>
-                                        <p><font>SQ</font>纣王老胡-昨天</p>
+                                        <h4>{{m.musicName}}</h4>
+                                        <p><font v-show="m.isSq">SQ</font>{{m.cdName}}</p>
                                     </div>
                                     <div class='right'>
                                         <img src='../assets/icon/play_03.png' class='play'/><img src='../assets/icon/shenglve.png' class='shenglve'/>
@@ -100,7 +100,74 @@
         },
         data:function(){
             return {
-
+                listArr:[
+                    {
+                        number:1,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:2,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:3,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:4,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:5,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:6,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:7,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:8,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:9,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:10,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                                        {
+                        number:1,
+                        musicName:"涩",
+                        cdName:"纣王老胡-昨天",
+                        isSq:true
+                    },
+                ]
             }
         },
         mounted:function(){
@@ -423,6 +490,21 @@
     .musicListBottom .playList .musicDetail .left p{
           flex-basis:100%;
           text-align:left;
+          position: relative;
+     }
+     .musicListBottom .playList .musicDetail .left font{
+         width: 0.56rem;
+        height: 0.2667rem;
+        line-height: 0.2667rem;
+        border: 0.0267rem solid #b86b7b;
+        font-size: 0.2133rem;
+        color: #b86b7b;
+        display: inline-block;
+        text-align: center;
+        margin-right: 0.12rem;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        vertical-align:middle;
      }
     .musicListBottom .playList .musicDetail .right{
         float:right;
