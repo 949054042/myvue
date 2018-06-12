@@ -244,7 +244,6 @@
         opacity:0;
     }
     .musicListBottom{
-        height:100vh;
         position:absolute;
         top:0.8rem;
         left:0;
@@ -252,7 +251,8 @@
         z-index:10000;
     }
     .musicListBottom .wrapper{
-        height:100vh;
+        position:absolute;
+        width:100%;
     }
     .musicListBottom .poster{
         width:100%;
