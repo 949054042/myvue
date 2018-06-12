@@ -528,8 +528,9 @@ import { setTimeout } from 'timers';
          width:0.5333rem;
          height:0.2667rem;
      }
-     #musicListBottom>.wrappper{
+     #musicListBottom>.wrapper{
          position:absolute;
+         width:100%;
          top:0;
          bottom:0;
      }
