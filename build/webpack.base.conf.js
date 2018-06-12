@@ -89,7 +89,7 @@ module.exports = {
       Swiper: 'swiper/dist/js/swiper.min.js'
     }),
     new webpack.ProvidePlugin({
-      Scroll: 'scroll'
+      Scroll: 'iscroll'
     }),
     new webpack.ProvidePlugin({
       VideoJs: 'vue-video-player'
