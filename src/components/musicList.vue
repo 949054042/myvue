@@ -89,6 +89,7 @@
     </div>
 </template>
 <script>
+import { setTimeout } from 'timers';
     export default{
         name:"Friend",
         props:[],
@@ -171,9 +172,12 @@
             }
         },
         mounted:function(){
-            var isScroll=new Scroll("#musicListBottom",{
-
-            });
+            setTimeout(function(){
+                var isScroll=new Scroll("#musicListBottom",{
+                        mouseWheel: true,
+                        click:true
+                });
+            },500)
         },
         methods:{
             back:function(){
