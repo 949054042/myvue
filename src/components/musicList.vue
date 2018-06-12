@@ -67,7 +67,7 @@
                     </div>
                     <div class='playList'>
                         <ul>
-                            <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
+                            <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n" @:click="alert(10)">
                                 <div class='listNumber'>
                                     <p>{{m.number}}</p>
                                 </div>
@@ -250,13 +250,10 @@ import { setTimeout } from 'timers';
     .musicListBottom{
         position:absolute;
         top:0.8rem;
+        bottom:1.307rem;
         left:0;
         width:100%;
         z-index:10000;
-    }
-    .musicListBottom .wrapper{
-        position:absolute;
-        width:100%;
     }
     .musicListBottom .poster{
         width:100%;
