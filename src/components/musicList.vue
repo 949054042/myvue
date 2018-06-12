@@ -38,7 +38,7 @@
                     <div class='select'>
                         <ul>
                             <li>
-                                <img src='../assets/icon/download.png'/>
+                                <img src='../assets/icon/message.png'/>
                                 <p>2733</p>
                             </li>
                             <li>
@@ -57,7 +57,32 @@
                     </div>
                 </div>
                 <div class="detail">
-
+                    <div class='operation'>
+                        <div class='left'>
+                            <img src='../assets/icon/play.png' alt='网络错误'/><span class='playAll'>播放全部</span><span class='total'>（共111首）</span>
+                        </div>
+                        <div class='right'>
+                            <img src='../assets/icon/add.png' alt='网络错误'/><span class='playAll'>收藏</span><span class='total'>（67.1万）</span>
+                        </div>
+                    </div>
+                    <div class='playList'>
+                        <ul>
+                            <li class='clearfix'>
+                                <div class='listNumber'>
+                                    <p>1</p>
+                                </div>
+                                <div class='musicDetail'>
+                                    <div class='left'>
+                                        <h4>涩</h4>
+                                        <p><font>SQ</font>纣王老胡-昨天</p>
+                                    </div>
+                                    <div class='right'>
+                                        <img src='../assets/icon/play_03.png' class='play'/><img src='../assets/icon/shenglve.png' class='shenglve'/>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,6 +323,7 @@
          float:left;
          width:25%;
          text-align:center;
+         padding-bottom:0.32rem;
      }
     .select li img{
         width:0.5467rem;
@@ -309,12 +335,109 @@
     }
     .musicListBottom .detail{
         position: absolute;
-        top:7.5rem;
         width: 100%;
-        height: 100px;
+        top:7.5rem;
         box-shadow: 0px -2px 10px #333;
         border-radius:0.24rem 0.24rem 0px 0px;
         z-index:1000;
         background:#fff;
     }
+    .musicListBottom .detail .operation{
+        height:1.333rem;
+        box-sizing:border-box;
+        padding-left:0.2667rem;
+    }
+    .musicListBottom .operation .left{
+        display:flex;
+        align-items:center;
+        float:left;
+        width:6.66rem;
+        height:1.333rem;
+    }
+    .musicListBottom .operation .left img{
+        width:0.5333rem;
+        height:0.5333rem;
+        margin-right:0.28rem;
+    }
+     .musicListBottom .operation .left .playAll{
+         display:inline-block;
+         font-size:0.4267rem;
+         color:#000000; 
+     }
+    .musicListBottom .operation .left .total{
+        display:inline-block;
+         font-size:0.32rem;
+         color:#97989a; 
+     }
+    .musicListBottom .operation .right{
+        float:left;
+        width:3.0667rem;
+        height:1.333rem;
+        display:flex;
+        align-items:center;
+        background:#f65246;
+    }
+    .musicListBottom .operation .right img{
+        width:0.3467rem;
+        height:0.3467rem;
+        margin-left:0.2rem;
+    }
+     .musicListBottom .operation .right .playAll{
+         display:inline-block;
+         font-size:0.3467rem;
+         color:#fff; 
+     }
+    .musicListBottom .operation .right .total{
+         display:inline-block;
+         font-size:0.3467rem;
+         color:#fff; 
+     }
+    .musicListBottom .playList .listNumber{
+        float:left;
+        width:1.0933rem;
+        height:1.4533rem;
+        line-height:1.4533rem;
+        font-size:0.3733rem;
+        color:#9d9ea0;
+    }
+    .musicListBottom .playList .musicDetail{
+        float:left;
+        width:8.9067rem;
+        height:1.4533rem;
+        border-top:0.0133rem solid #e2e3e5;
+        box-sizing:border-box;
+        padding-right:0.2667rem;
+     }
+     .musicListBottom .playList .musicDetail .left{
+        float:left;
+        display:flex;
+        align-items:center;
+         height:1.4533rem;
+         width:3.44rem;
+         flex-wrap:wrap;
+     }
+     .musicListBottom .playList .musicDetail .left h4{
+         flex-basis:100%;
+         text-align:left;
+     }
+    .musicListBottom .playList .musicDetail .left p{
+          flex-basis:100%;
+          text-align:left;
+     }
+    .musicListBottom .playList .musicDetail .right{
+        float:right;
+        display:flex;
+        align-items:center;
+        height:1.4533rem;
+        width:1.68rem;
+     }
+     .musicListBottom .playList .musicDetail .right .play{
+         width:0.52rem;
+         height:0.4267rem;
+         margin-right:0.5333rem;
+     }
+    .musicListBottom .playList .musicDetail .right .shenglve{
+         width:0.5333rem;
+         height:0.2667rem;
+     }
 </style>
