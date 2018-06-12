@@ -172,11 +172,12 @@ import { setTimeout } from 'timers';
             }
         },
         mounted:function(){
+            var isScroll=new Scroll("#musicListBottom",{
+                mouseWheel: true,
+                click:true
+            });
             setTimeout(function(){
-                var isScroll=new Scroll("#musicListBottom",{
-                        mouseWheel: true,
-                        click:true
-                });
+                isScroll.refresh()
             },500)
         },
         methods:{
