@@ -9,7 +9,7 @@
         </div>
         <div class="musicListBottom" id="musicListBottom">
             <div class="wrapper">
-                <div class="poster">
+                <div class="poster"  @click="say()">
                     <div class='motel'></div>
                     <img src="../assets/images/mohu_03.jpg" alt='网络错误' class='bg'/>
                     <div class="search">
@@ -37,7 +37,7 @@
                     </div>
                     <div class='select'>
                         <ul>
-                            <li>
+                            <li @click="say()">
                                 <img src='../assets/icon/message.png'/>
                                 <p>2733</p>
                             </li>
@@ -182,6 +182,9 @@ import { setTimeout } from 'timers';
         methods:{
             back:function(){
                 this.$router.back()
+            },
+            say:function(){
+                alert(10)
             }
         }
     }
@@ -253,7 +256,6 @@ import { setTimeout } from 'timers';
         bottom:1.307rem;
         left:0;
         width:100%;
-        z-index:10000;
     }
     .musicListBottom .poster{
         width:100%;
@@ -523,5 +525,10 @@ import { setTimeout } from 'timers';
     .musicListBottom .playList .musicDetail .right .shenglve{
          width:0.5333rem;
          height:0.2667rem;
+     }
+     #musicListBottom>.wrappper{
+         position:absolute;
+         top:0;
+         bottom:0;
      }
 </style>
