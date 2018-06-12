@@ -184,13 +184,12 @@ import { setTimeout } from 'timers';
                 this.$router.back()
             },
             say:function(){
-                alert(10)
             }
         }
     }
 </script>
 <style>
-    musicList{
+    .musicList{
         height:100vh;
     }
     .musicListTop{
