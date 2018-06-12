@@ -90,6 +90,7 @@
 </template>
 <script>
 import { setTimeout } from 'timers';
+import Scroll from "iscroll"
     export default{
         name:"Friend",
         props:[],
