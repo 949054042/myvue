@@ -263,10 +263,6 @@ import { setTimeout } from 'timers';
     .musicListBottom .poster{
         width:100%;
         height:7.7733rem;
-        left:0;
-        top:0;
-        position:absolute;
-        z-index:100;
     }
     .musicListBottom .motel{
         position: absolute;
@@ -408,9 +404,9 @@ import { setTimeout } from 'timers';
         color:#fff;  
     }
     .musicListBottom .detail{
-        position: absolute;
+        position:relative;
         width: 100%;
-        top:7.5rem;
+        margin-top:-1rem;
         box-shadow: 0px -2px 10px #333;
         border-radius:0.24rem 0.24rem 0px 0px;
         z-index:1000;
@@ -528,11 +524,5 @@ import { setTimeout } from 'timers';
     .musicListBottom .playList .musicDetail .right .shenglve{
          width:0.5333rem;
          height:0.2667rem;
-     }
-     #musicListBottom>.wrapper{
-         position:absolute;
-         width:100%;
-         top:0;
-         bottom:0;
      }
 </style>
