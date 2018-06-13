@@ -368,7 +368,7 @@ import Scroll from "iscroll"
     }
     .selectBody li .ListDetail{
         float:left;
-        width:98.933%;
+        width:88.933%;
         border-bottom:1px solid #333;
         height:1.76rem;
     }
