@@ -569,11 +569,19 @@ import Scroll from "iscroll"
         display:flex;
         align-items:center;
     }
+    .srotType_01 img{
+        width:0.2667rem;
+        height:0.32rem;
+    }
     .srotType_02{
         width:1.16rem;
         height:0.8rem;
         float:left;
         display:flex;
         align-items:center;
+    }
+    .srotType_02 img{
+        width:0.36rem;
+        height:0.32rem;
     }
 </style>
