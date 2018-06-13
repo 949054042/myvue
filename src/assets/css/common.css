@@ -1,0 +1,9 @@
+.clearfix::after{
+    content:" ";
+    visibility:none;
+    clear: both;
+    display:block;
+    width:0;
+    height:0;
+}
+.clearfix{ height:1%; }

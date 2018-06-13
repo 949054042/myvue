@@ -43,7 +43,7 @@
                                     </div>
                                     <div class='ListDetail'>
                                         <div class='left'>
-                                            <div class='top'>
+                                            <div class='top2'>
                                                 <h3>后来要体面</h3>
                                             </div>
                                             <div class='bottom'>

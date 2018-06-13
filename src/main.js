@@ -9,6 +9,7 @@ import store from './store'
 // import 'bootstrap/dist/js/bootstrap.min'
 import 'reset.css'
 import 'lib-flexible'
+import './assets/css/common.css'
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css'
 import 'swiper/dist/css/swiper.min.css';
