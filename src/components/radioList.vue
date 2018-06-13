@@ -39,15 +39,19 @@
                             <ul>
                                 <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                     <div class='listNumber'>
-                                        <p>{{m.number}}</p>
+                                        <h4>1</h4>
                                     </div>
-                                    <div class='musicDetail'>
+                                    <div class='ListDetail'>
                                         <div class='left'>
-                                            <h4>{{m.musicName}}</h4>
-                                            <p><font v-show="m.isSq">SQ</font>{{m.cdName}}</p>
-                                        </div>
-                                        <div class='right'>
-                                            <img src='../assets/icon/play_03.png' class='play'/><img src='../assets/icon/shenglve.png' class='shenglve'/>
+                                            <div class='top'>
+                                                <h3>后来要体面</h3>
+                                            </div>
+                                            <div class='bottom'>
+                                                <div class='date'>05-13</div>
+                                                <div>314.6万</div>
+                                                <div class='playFinish'>05:04</div>
+                                                <div class='status'>已播完</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -330,6 +334,9 @@ import Scroll from "iscroll"
         z-index:2000;
         height:100px;
      }
+     .selectHead{
+          height:1.333rem;
+     }
      .selectHead li{
          float:left;
          height:1.333rem;
@@ -351,5 +358,18 @@ import Scroll from "iscroll"
         line-height:1.4533rem;
         font-size:0.3733rem;
         color:#9d9ea0;
+    }
+    .selectBody li .listNumber{
+        float:left;
+        width:1.1067rem;
+        width:11.067%;
+        text-align:center;
+        height:1.76rem;
+    }
+    .selectBody li .ListDetail{
+        float:left;
+        width:98.933%;
+        border-bottom:1px solid #333;
+        height:1.76rem;
     }
 </style>
