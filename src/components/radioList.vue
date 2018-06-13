@@ -109,6 +109,16 @@
                 </div>
             </div>
         </div>
+        <div class='selectBottom2' v-show='flag3'>
+            <div class='downLoad'>
+                <img src='../assets/icon/download2.png' alt='网络错误'/>
+                <p>下载</p>
+            </div>
+            <div class='delDownLoad'>
+                <img src='../assets/icon/remove.png' alt='网络错误'/>
+                <p>删除下载</p>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -126,6 +136,7 @@ import Scroll from "iscroll"
         data:function(){
             return {
                 flag:true,
+                flag3:false,
                 listArr:[
                     {
                         listNumber:1,
@@ -265,6 +276,7 @@ import Scroll from "iscroll"
             },
             showAll:function(){
                 var arr=this.listArr;
+                this.flag3=!this.flag3;
                 for(var i=0;i<arr.length;i++){
                     arr[i].flag=!arr[i].flag
                     arr[i].flag2=false
@@ -583,5 +595,29 @@ import Scroll from "iscroll"
     .srotType_02 img{
         width:0.36rem;
         height:0.32rem;
+    }
+    .selectBottom2{
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:1.4267rem;
+        border-top:0.0133rem solid #cdcbcc;
+        z-index:9999;
+        background:#fff;
+    }
+    .selectBottom2>div{
+        float:left;
+        width:50%;
+        text-align:center;
+        box-sizing:border-box;
+        padding-top:0.2533rem;
+        font-size:0.2667rem;
+        color:#858585;
+    }
+    .selectBottom2 img{
+        width:0.5867rem;
+        height:0.6rem;
+        margin-bottom:0.1733rem;
     }
 </style>
