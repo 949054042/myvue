@@ -4,12 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import $ from 'jquery'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min'
+// import $ from 'jquery'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.min'
 import 'reset.css'
 import 'lib-flexible'
 import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css'
 import 'swiper/dist/css/swiper.min.css';
 import 'video.js/dist/video-js.css'
 import VueVideoPlayer from "vue-video-player"
