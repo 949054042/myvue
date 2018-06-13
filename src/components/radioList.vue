@@ -34,23 +34,42 @@
                             <span>界面</span>
                         </li>
                     </ul>
+                    <div class='sort'>
+                        <div class='left'>
+                            <h3>共5期</h3>
+                        </div>
+                        <div class='right'>
+                            <div class='srotType_01'>
+                                <img src='../assets/icon/raise.png' alt='增序'/><span>排序</span>
+                            </div>
+                            <div class='srotType_02' @click="showAll()">
+                                <img src='../assets/icon/morecheck2.png' alt='更多选择'/><span>多选</span>
+                            </div>
+                        </div>
+                    </div>
                     <ul class='selectBody clearfix'>
                         <li v-show='flag'>
                             <ul>
                                 <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                     <div class='listNumber'>
-                                        <h4>1</h4>
+                                        <h4 v-show='!m.flag'>{{m.listNumber}}</h4>
+                                         <input type='radio' v-show='m.flag' :name='m.name'/>
+                                         <label v-show='m.flag' :for='m.name' :class='{active:m.flag2}' @click='m.flag2=!m.flag2'>
+                                             <div class='radio'>
+                                                 <img src='../assets/icon/true_01.png' alt='选中'/>
+                                             </div>
+                                         </label>
                                     </div>
                                     <div class='ListDetail'>
                                         <div class='left'>
                                             <div class='top2'>
-                                                <h3>后来要体面</h3>
+                                                <h3>{{m.radioName}}</h3>
                                             </div>
                                             <div class='bottom'>
-                                                <div class='date'><span>05-13</span></div>
-                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>314.6万</span></div>
-                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>05:04</span></div>
-                                                <div class='status'><span>已播完</span></div>
+                                                <div class='date'><span>{{m.addTime}}</span></div>
+                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>{{m.totalPlay}}万</span></div>
+                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>{{m.totalTime}}</span></div>
+                                                <div class='status'><span>{{m.status}}</span></div>
                                             </div>
                                         </div>
                                         <div class='right'>
@@ -64,19 +83,23 @@
                             <ul>
                                 <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                     <div class='listNumber'>
-                                        <h4>1</h4>
+                                        <h4 v-show='!m.flag'>{{m.listNumber}}</h4>
+                                         <input type='radio' v-show='m.flag'/>
                                     </div>
                                     <div class='ListDetail'>
                                         <div class='left'>
                                             <div class='top2'>
-                                                <h3>后来要体面</h3>
+                                                <h3>{{m.radioName}}</h3>
                                             </div>
                                             <div class='bottom'>
-                                                <div class='date'><span>05-13</span></div>
-                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>314.6万</span></div>
-                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>05:04</span></div>
-                                                <div class='status'><span>已播完</span></div>
+                                                <div class='date'><span>{{m.addTime}}</span></div>
+                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>{{m.totalPlay}}万</span></div>
+                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>{{m.totalTime}}</span></div>
+                                                <div class='status'><span>{{m.status}}</span></div>
                                             </div>
+                                        </div>
+                                        <div class='right'>
+                                            <img src='../assets/icon/shenglve.png' alt='更多'/>
                                         </div>
                                     </div>
                                 </li>
@@ -103,72 +126,127 @@ import Scroll from "iscroll"
         data:function(){
             return {
                 flag:true,
-                                listArr:[
+                listArr:[
                     {
-                        number:1,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name1"
                     },
-                                        {
-                        number:2,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name2"
                     },
-                                        {
-                        number:3,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name3"
                     },
-                                        {
-                        number:4,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name4"
                     },
-                                        {
-                        number:5,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name5"
                     },
-                                        {
-                        number:6,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name6"
                     },
-                                        {
-                        number:7,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name7"
                     },
-                                        {
-                        number:8,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name8"
                     },
-                                        {
-                        number:9,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name9"
                     },
-                                        {
-                        number:10,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name10"
                     },
-                                        {
-                        number:1,
-                        musicName:"涩",
-                        cdName:"纣王老胡-昨天",
-                        isSq:true
+                    {
+                        listNumber:1,
+                        radioName:"后来要体面",
+                        addTime:"05-13",
+                        totalPlay:"314.6",
+                        totalTime:"05:04",
+                        status:"已播完",
+                        flag:false,
+                        flag2:false,
+                        name:"name1"
                     },
                 ]
             }
@@ -184,6 +262,13 @@ import Scroll from "iscroll"
                 this.$router.back()
             },
             say:function(){
+            },
+            showAll:function(){
+                var arr=this.listArr;
+                for(var i=0;i<arr.length;i++){
+                    arr[i].flag=!arr[i].flag
+                    arr[i].flag2=false
+                }
             }
         }
     }
@@ -358,6 +443,32 @@ import Scroll from "iscroll"
        border-bottom:0.08rem solid #d33a34;
         color:#d33a34;
     }
+      .selectBody input[type=radio]{
+         display:none;
+      }
+      .selectBody .radio{
+          width:0.5867rem;
+          height:0.5867rem;
+          border-radius:50%;
+          position: relative;
+          border:1px solid #ddd;
+      }
+      .selectBody .radio img{
+          position:absolute;
+          width:0.4694rem;
+          height:0.4694rem;
+          left:50%;
+          top:50%;
+          margin-left:-0.2347rem;
+          margin-top:-0.2347rem;
+          display:none;
+      }
+      .selectBody .active .radio{
+          background-color:red;
+      }
+      .selectBody .active img{
+          display:block;
+      }
        .selectBody .playList .listNumber{
         float:left;
         width:1.0933rem;
@@ -365,6 +476,9 @@ import Scroll from "iscroll"
         line-height:1.4533rem;
         font-size:0.3733rem;
         color:#9d9ea0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .selectBody li .listNumber{
         float:left;
@@ -372,6 +486,10 @@ import Scroll from "iscroll"
         width:11.067%;
         text-align:center;
         height:1.76rem;
+        line-height:1.76rem;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
     .selectBody li .ListDetail{
         float:left;
@@ -423,5 +541,39 @@ import Scroll from "iscroll"
     .selectBody .ListDetail .right img{
         width:0.6rem;
         height:0.5rem;
+    }
+    .sort{
+        height:0.8rem;
+        border-top:0.0133rem solid #e1e2e4;
+        background-color:#eeeff1;
+    }
+    .sort .left{
+        float:left;
+        margin-left:0.28rem;
+    }
+     .sort .left h3{
+         font-size:0.32rem;
+         color:#79797b;
+         line-height:0.8rem;
+     }
+    .sort .right{
+        float:right;
+        margin-right:0.2133rem;
+        width:2.933rem;
+    }
+    .srotType_01{
+        width:1.0933rem;
+        height:0.8rem;
+        margin-right:0.6733rem;
+        float:left;
+        display:flex;
+        align-items:center;
+    }
+    .srotType_02{
+        width:1.16rem;
+        height:0.8rem;
+        float:left;
+        display:flex;
+        align-items:center;
     }
 </style>
