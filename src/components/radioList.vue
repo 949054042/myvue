@@ -27,10 +27,10 @@
                 </div>
                 <div class="detail">
                     <ul class='selectHead clearfix'>
-                        <li :class='{active:flag}' @click='flag=true'>
+                        <li :class='{active:flag}' @click='flag=true;iscroll.refresh()'>
                             <span>详情</span>
                         </li>
-                        <li :class="{active:!flag}" @click="flag=false">
+                        <li :class="{active:!flag}" @click="flag=false;iscroll.refresh()">
                             <span>节目</span>
                         </li>
                     </ul>
@@ -148,6 +148,7 @@ import Scroll from "iscroll"
         },
         data:function(){
             return {
+                iscroll:null,
                 flag:true,
                 flag3:false,
                 listArr:[
@@ -276,7 +277,7 @@ import Scroll from "iscroll"
             }
         },
         mounted:function(){
-            var isScroll=new Scroll("#radioDetailBottom",{
+            this.iscroll=new Scroll("#radioDetailBottom",{
                 mouseWheel: true,
                 click:true
             });
