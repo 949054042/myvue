@@ -299,10 +299,18 @@ import Scroll from "iscroll"
             changeBox:function(m){
                 if(m==0){
                     this.flag=false;
-                    this.iscroll.refresh();
+                    delete this.iscroll;
+                        this.iscroll=new Scroll("#radioDetailBottom",{
+                        mouseWheel: true,
+                        click:true
+                    });
                 }else{
                     this.flag=true;
-                    this.iscroll.refresh();
+                    delete this.iscroll;
+                    this.iscroll=new Scroll("#radioDetailBottom",{
+                        mouseWheel: true,
+                        click:true
+                    });
                 }
             }
         }
