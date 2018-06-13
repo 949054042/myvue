@@ -51,7 +51,7 @@
                         <li v-show='flag'>
                             <div class='firstFloor'>
                                 <div class='wrapper'>
-                                   <div class='title'>
+                                   <div class='title2'>
                                         主播
                                    </div>
                                 </div>
@@ -73,7 +73,7 @@
                             </div>
                             <div  class='thirdFloor'>
                                 <div class='wrapper'>
-                                   <div class='title'>
+                                   <div class='title2'>
                                         电台内容简介
                                    </div>
                                    <div class='content'>
@@ -463,24 +463,24 @@ import Scroll from "iscroll"
          text-align:center;
          line-height:1.333rem;
      }
-    .selectHead span{
+    .radioDetail .selectHead span{
         padding-bottom:0.1333rem;
     }
-    .selectHead li.active span{
+    .radioDetail .selectHead li.active span{
        border-bottom:0.08rem solid #d33a34;
         color:#d33a34;
     }
-      .selectBody input[type=radio]{
+    .radioDetail .selectBody input[type=radio]{
          display:none;
       }
-      .selectBody .radio{
+    .radioDetail .selectBody .radio{
           width:0.5867rem;
           height:0.5867rem;
           border-radius:50%;
           position: relative;
           border:1px solid #ddd;
       }
-      .selectBody .radio img{
+    .radioDetail .selectBody .radio img{
           position:absolute;
           width:0.4694rem;
           height:0.4694rem;
@@ -490,13 +490,13 @@ import Scroll from "iscroll"
           margin-top:-0.2347rem;
           display:none;
       }
-      .selectBody .active .radio{
+    .radioDetail .selectBody .active .radio{
           background-color:red;
       }
-      .selectBody .active img{
+    .radioDetail .selectBody .active img{
           display:block;
       }
-       .selectBody .playList .listNumber{
+    .radioDetail .selectBody .playList .listNumber{
         float:left;
         width:1.0933rem;
         height:1.4533rem;
@@ -507,7 +507,7 @@ import Scroll from "iscroll"
         align-items:center;
         justify-content:center;
     }
-    .selectBody li .listNumber{
+    .radioDetail .selectBody li .listNumber{
         float:left;
         width:1.1067rem;
         width:11.067%;
@@ -518,77 +518,77 @@ import Scroll from "iscroll"
         justify-content:center;
         align-items:center;
     }
-    .selectBody li .ListDetail{
+    .radioDetail .selectBody li .ListDetail{
         float:left;
         width:88.933%;
         border-bottom:1px solid #333;
         height:1.76rem;
     }
-    .selectBody .ListDetail .left{
+    .radioDetail .selectBody .ListDetail .left{
         float:left;
         height:1.76rem;
         width:65.817%;
     }
-    .selectBody .ListDetail .left .top2{
+    .radioDetail .selectBody .ListDetail .left .top2{
         font-size:0.3733rem;
         color:#333;
         margin-top:0.4267rem;
         margin-bottom:0.32rem;
         text-align:left;
     }
-    .selectBody .ListDetail .left .bottom{
+    .radioDetail .selectBody .ListDetail .left .bottom{
         display:flex;
         flex-wrap:nowrap;
         justify-content:space-between;
         align-items:center;
     }
-    .selectBody .ListDetail .left .bottom span{
+    .radioDetail .selectBody .ListDetail .left .bottom span{
         display:inline-block;
         font-size:0.32rem;
         color:#9d9d9f;
     }
-    .selectBody .ListDetail .left .bottom>div{
+    .radioDetail .selectBody .ListDetail .left .bottom>div{
         margin-right:0.1rem;
     }
-    .selectBody .ListDetail .left  .totalPlay img{
+    .radioDetail .selectBody .ListDetail .left  .totalPlay img{
         width:0.2133rem;
         height:0.2533rem;
         margin-right:0.16rem;
     }
-    .selectBody .ListDetail .left  .playFinish img{
+    .radioDetail .selectBody .ListDetail .left  .playFinish img{
         width:0.32rem;
         height:0.32rem;
         margin-right:0.16rem;
     }
-    .selectBody .ListDetail .right{
+    .radioDetail .selectBody .ListDetail .right{
         float:right;
         margin-right:0.3067rem;
         margin-top:0.7733rem;
     }
-    .selectBody .ListDetail .right img{
+    .radioDetail .selectBody .ListDetail .right img{
         width:0.6rem;
         height:0.5rem;
     }
-    .sort{
+    .radioDetail .sort{
         height:0.8rem;
         border-top:0.0133rem solid #e1e2e4;
         background-color:#eeeff1;
     }
-    .sort .left{
+    .radioDetail .sort .left{
         float:left;
         margin-left:0.28rem;
     }
-     .sort .left h3{
+    .radioDetail .sort .left h3{
          font-size:0.32rem;
          color:#79797b;
          line-height:0.8rem;
      }
-    .sort .right{
+    .radioDetail .sort .right{
         float:right;
         margin-right:0.2133rem;
         width:2.933rem;
     }
-    .srotType_01{
+    .radioDetail .srotType_01{
         width:1.0933rem;
         height:0.8rem;
         margin-right:0.6733rem;
@@ -596,22 +596,22 @@ import Scroll from "iscroll"
         display:flex;
         align-items:center;
     }
-    .srotType_01 img{
+    .radioDetail .srotType_01 img{
         width:0.2667rem;
         height:0.32rem;
     }
-    .srotType_02{
+    .radioDetail .srotType_02{
         width:1.16rem;
         height:0.8rem;
         float:left;
         display:flex;
         align-items:center;
     }
-    .srotType_02 img{
+    .radioDetail .srotType_02 img{
         width:0.36rem;
         height:0.32rem;
     }
-    .selectBottom2{
+    .radioDetail .selectBottom2{
         position:fixed;
         bottom:0;
         left:0;
@@ -621,7 +621,7 @@ import Scroll from "iscroll"
         z-index:9999;
         background:#fff;
     }
-    .selectBottom2>div{
+    .radioDetail .selectBottom2>div{
         float:left;
         width:50%;
         text-align:center;
@@ -630,23 +630,23 @@ import Scroll from "iscroll"
         font-size:0.2667rem;
         color:#858585;
     }
-    .selectBottom2 img{
+    .radioDetail .selectBottom2 img{
         width:0.5867rem;
         height:0.6rem;
         margin-bottom:0.1733rem;
     }
-    .firstFloor{
+    .radioDetail .firstFloor{
         height:1.373rem;
         border-bottom:0.0133rem solid #e1e2e4;
         box-sizing:border-box;
     }
-    .secondFloor{
+    .radioDetail .secondFloor{
         height:1.84rem;
         border-bottom:0.0133rem solid #e1e2e4;
         padding-left:0.2667rem;
         box-sizing:border-box;
     }
-    .secondFloor .icon{
+    .radioDetail .secondFloor .icon{
         float:left;
         width:1.44rem;
         height:1.373rem;
@@ -654,11 +654,11 @@ import Scroll from "iscroll"
         padding-top:0.2rem;
         box-sizing:border-box;
     }
-     .secondFloor .icon img{
+    .radioDetail .secondFloor .icon img{
         width:1.44rem;
         height:1.373rem;   
      }
-    .secondFloor .introduce{
+    .radioDetail .secondFloor .introduce{
         float:left;
         width:5.5067rem;
         height:1.373rem;
@@ -666,7 +666,7 @@ import Scroll from "iscroll"
         padding-top:0.2rem;
         box-sizing:border-box;
     }
-    .secondFloor h3{
+    .radioDetail .secondFloor h3{
         font-size:0.3733rem;
         color:#2f2f31;
         font-family:inherit;
@@ -674,7 +674,7 @@ import Scroll from "iscroll"
         margin-top:0.24rem;
         text-align:left;
     }
-    .secondFloor p{
+    .radioDetail .secondFloor p{
         font-size:0.32rem;
         color:#969698;
         font-family:inherit;
@@ -683,14 +683,14 @@ import Scroll from "iscroll"
         overflow: hidden;
         text-align:left;
     }
-    .secondFloor .appreciate{
+    .radioDetail .secondFloor .appreciate{
         float:left;
         width:1.6533rem;
         height:1.373rem;
         padding-top:0.2rem;
         box-sizing:border-box;
     }
-    .secondFloor button{
+    .radioDetail .secondFloor button{
         width:1.6533rem;
         height:0.6933rem;
         border:1px solid#c63e2e;
@@ -703,18 +703,18 @@ import Scroll from "iscroll"
         font-size:0.3333rem;
         line-height:0.6933rem;
     }
-    .secondFloor .appreciate p{
+    .radioDetail .secondFloor .appreciate p{
         font-size:0.24rem;
         color:#979797;
         font-family:inherit;
         text-align:center;
     }
-    .thirdFloor{
+    .radioDetail .thirdFloor{
         padding-top:1.0667rem;
         padding-bottom:2.4933rem;
         box-sizing:border-box;
     }
-    .thirdFloor .content{
+    .radioDetail .thirdFloor .content{
         padding-left:0.2667rem;
         margin-top:0.4667rem;
         font-size:0.3333rem;
@@ -722,17 +722,17 @@ import Scroll from "iscroll"
         font-family:inherit;
         line-height:0.6227rem;
     }
-    .thirdFloor .content .top{
+    .radioDetail .thirdFloor .content .top{
         margin-bottom:0.88rem;
     }
-    .title{
+    .radioDetail .title2{
         height:0.4267rem;
         border-left:0.0533rem solid #d24637;
         padding-left:0.2267rem;
         box-sizing:border-box;
         text-align:left;
     }
-     .firstFloor .title{
+    .radioDetail .firstFloor .title{
          margin-top:0.5467rem;
          line-height:0.4267rem;
          text-align:left;
