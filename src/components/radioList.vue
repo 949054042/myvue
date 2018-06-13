@@ -47,11 +47,14 @@
                                                 <h3>后来要体面</h3>
                                             </div>
                                             <div class='bottom'>
-                                                <div class='date'>05-13</div>
-                                                <div>314.6万</div>
-                                                <div class='playFinish'>05:04</div>
-                                                <div class='status'>已播完</div>
+                                                <div class='date'><span>05-13</span></div>
+                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>314.6万</span></div>
+                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>05:04</span></div>
+                                                <div class='status'><span>已播完</span></div>
                                             </div>
+                                        </div>
+                                        <div class='right'>
+                                            <img src='../assets/icon/shenglve.png' alt='更多'/>
                                         </div>
                                     </div>
                                 </li>
@@ -61,15 +64,19 @@
                             <ul>
                                 <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                     <div class='listNumber'>
-                                        <p>{{m.number}}</p>
+                                        <h4>1</h4>
                                     </div>
-                                    <div class='musicDetail'>
+                                    <div class='ListDetail'>
                                         <div class='left'>
-                                            <h4>{{m.musicName}}</h4>
-                                            <p><font v-show="m.isSq">SQ</font>{{m.cdName}}</p>
-                                        </div>
-                                        <div class='right'>
-                                            <img src='../assets/icon/play_03.png' class='play'/><img src='../assets/icon/shenglve.png' class='shenglve'/>
+                                            <div class='top2'>
+                                                <h3>后来要体面</h3>
+                                            </div>
+                                            <div class='bottom'>
+                                                <div class='date'><span>05-13</span></div>
+                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>314.6万</span></div>
+                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>05:04</span></div>
+                                                <div class='status'><span>已播完</span></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -332,7 +339,6 @@ import Scroll from "iscroll"
         z-index:1000;
         background:#fff;
         z-index:2000;
-        height:100px;
      }
      .selectHead{
           height:1.333rem;
@@ -371,5 +377,50 @@ import Scroll from "iscroll"
         width:88.933%;
         border-bottom:1px solid #333;
         height:1.76rem;
+    }
+    .selectBody .ListDetail .left{
+        float:left;
+        height:1.76rem;
+        width:65.817%;
+    }
+    .selectBody .ListDetail .left .top2{
+        font-size:0.3733rem;
+        color:#333;
+        margin-top:0.4267rem;
+        margin-bottom:0.32rem;
+        text-align:left;
+    }
+    .selectBody .ListDetail .left .bottom{
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .selectBody .ListDetail .left .bottom span{
+        display:inline-block;
+        font-size:0.32rem;
+        color:#9d9d9f;
+    }
+    .selectBody .ListDetail .left .bottom>div{
+        margin-right:0.1rem;
+    }
+    .selectBody .ListDetail .left  .totalPlay img{
+        width:0.2133rem;
+        height:0.2533rem;
+        margin-right:0.16rem;
+    }
+    .selectBody .ListDetail .left  .playFinish img{
+        width:0.32rem;
+        height:0.32rem;
+        margin-right:0.16rem;
+    }
+    .selectBody .ListDetail .right{
+        float:right;
+        margin-right:0.3067rem;
+        margin-top:0.7733rem;
+    }
+    .selectBody .ListDetail .right img{
+        width:0.6rem;
+        height:0.5rem;
     }
 </style>
