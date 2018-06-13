@@ -31,10 +31,10 @@
                             <span>详情</span>
                         </li>
                         <li :class="{active:!flag}" @click="flag=false">
-                            <span>界面</span>
+                            <span>节目</span>
                         </li>
                     </ul>
-                    <div class='sort'>
+                    <div class='sort' v-show='!flag'>
                         <div class='left'>
                             <h3>共5期</h3>
                         </div>
@@ -49,35 +49,43 @@
                     </div>
                     <ul class='selectBody clearfix'>
                         <li v-show='flag'>
-                            <ul>
-                                <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
-                                    <div class='listNumber'>
-                                        <h4 v-show='!m.flag'>{{m.listNumber}}</h4>
-                                         <input type='radio' v-show='m.flag' :id='m.name'/>
-                                         <label v-show='m.flag' :for='m.name' :class='{active:m.flag2}' @click='m.flag2=!m.flag2'>
-                                             <div class='radio'>
-                                                 <img src='../assets/icon/true_01.png' alt='选中'/>
-                                             </div>
-                                         </label>
+                            <div class='firstFloor'>
+                                <div class='wrapper'>
+                                   <div class='title'>
+                                        主播
+                                   </div>
+                                </div>
+                            </div>
+                            <div class='secondFloor'>
+                                <div class='wrapper'>
+                                    <div class='icon'>
+                                        <img src='../assets/images/radioposter.png' alt='网络错误'/>
                                     </div>
-                                    <div class='ListDetail'>
-                                        <div class='left'>
-                                            <div class='top2'>
-                                                <h3>{{m.radioName}}</h3>
-                                            </div>
-                                            <div class='bottom'>
-                                                <div class='date'><span>{{m.addTime}}</span></div>
-                                                <div class='totalPlay'><img src='../assets/icon/stopPlay.png' alt='暂停'/><span>{{m.totalPlay}}万</span></div>
-                                                <div class='playFinish'><img src='../assets/icon/playtime.png' alt='暂停'/><span>{{m.totalTime}}</span></div>
-                                                <div class='status'><span>{{m.status}}</span></div>
-                                            </div>
-                                        </div>
-                                        <div class='right'>
-                                            <img src='../assets/icon/shenglve.png' alt='更多'/>
-                                        </div>
+                                    <div class='introduce'>
+                                        <h3>猫王音乐台</h3>
+                                        <p>猫王音乐台，Radiooo Station,喜欢zzzzzzz</p>
                                     </div>
-                                </li>
-                            </ul>
+                                    <div class='appreciate'>
+                                        <button type='button'>赞赏</button>
+                                        <p>20次赞赏</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class='thirdFloor'>
+                                <div class='wrapper'>
+                                   <div class='title'>
+                                        电台内容简介
+                                   </div>
+                                   <div class='content'>
+                                       <div class='top'>
+
+                                       </div>
+                                       <div class='bottom'>
+
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
                         </li>
                         <li v-show='!flag'>
                             <ul>
@@ -445,6 +453,7 @@ import Scroll from "iscroll"
      }
      .selectHead{
           height:1.333rem;
+          border-bottom:1px solid #cdcbcc;
      }
      .selectHead li{
          float:left;
@@ -625,4 +634,106 @@ import Scroll from "iscroll"
         height:0.6rem;
         margin-bottom:0.1733rem;
     }
+    .firstFloor{
+        height:1.373rem;
+        border-bottom:0.0133rem solid #e1e2e4;
+        box-sizing:border-box;
+    }
+    .secondFloor{
+        height:1.84rem;
+        border-bottom:0.0133rem solid #e1e2e4;
+        padding-left:0.2667rem;
+        box-sizing:border-box;
+    }
+    .secondFloor .icon{
+        float:left;
+        width:1.44rem;
+        height:1.373rem;
+        margin-right:0.28rem;
+        padding-top:0.2rem;
+        box-sizing:border-box;
+    }
+     .secondFloor .icon img{
+        width:1.44rem;
+        height:1.373rem;   
+     }
+    .secondFloor .introduce{
+        float:left;
+        width:5.5067rem;
+        height:1.373rem;
+        margin-right:0.6133rem;
+        padding-top:0.2rem;
+        box-sizing:border-box;
+    }
+    .secondFloor h3{
+        font-size:0.3733rem;
+        color:#2f2f31;
+        font-family:inherit;
+        margin-bottom:0.2133rem;
+        margin-top:0.24rem;
+        text-align:left;
+    }
+    .secondFloor p{
+        font-size:0.32rem;
+        color:#969698;
+        font-family:inherit;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align:left;
+    }
+    .secondFloor .appreciate{
+        float:left;
+        width:1.6533rem;
+        height:1.373rem;
+        padding-top:0.2rem;
+        box-sizing:border-box;
+    }
+    .secondFloor button{
+        width:1.6533rem;
+        height:0.6933rem;
+        border:1px solid#c63e2e;
+        outline:none;
+        border-radius:0.6815rem;
+        margin-top:0.1733rem;
+        margin-bottom:0.0933rem;
+        color:#c63e2e;
+        background-color:#fff;
+        font-size:0.3333rem;
+        line-height:0.6933rem;
+    }
+    .secondFloor .appreciate p{
+        font-size:0.24rem;
+        color:#979797;
+        font-family:inherit;
+        text-align:center;
+    }
+    .thirdFloor{
+        padding-top:1.0667rem;
+        padding-bottom:2.4933rem;
+        box-sizing:border-box;
+    }
+    .thirdFloor .content{
+        padding-left:0.2667rem;
+        margin-top:0.4667rem;
+        font-size:0.3333rem;
+        color:#656668;
+        font-family:inherit;
+        line-height:0.6227rem;
+    }
+    .thirdFloor .content .top{
+        margin-bottom:0.88rem;
+    }
+    .title{
+        height:0.4267rem;
+        border-left:0.0533rem solid #d24637;
+        padding-left:0.2267rem;
+        box-sizing:border-box;
+        text-align:left;
+    }
+     .firstFloor .title{
+         margin-top:0.5467rem;
+         line-height:0.4267rem;
+         text-align:left;
+     }
 </style>
