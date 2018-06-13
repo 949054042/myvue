@@ -67,7 +67,7 @@
                     </div>
                     <div class='playList'>
                         <ul>
-                            <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n" @:click="alert(10)">
+                            <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                 <div class='listNumber'>
                                     <p>{{m.number}}</p>
                                 </div>
