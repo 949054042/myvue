@@ -27,10 +27,10 @@
                 </div>
                 <div class="detail">
                     <ul class='selectHead clearfix'>
-                        <li :class='{active:flag}' @click='flag=true;iscroll.refresh()'>
+                        <li :class='{active:flag}' @click='changeBox(1)'>
                             <span>详情</span>
                         </li>
-                        <li :class="{active:!flag}" @click="flag=false;iscroll.refresh()">
+                        <li :class="{active:!flag}" @click="changeBox(0)">
                             <span>节目</span>
                         </li>
                     </ul>
@@ -294,6 +294,15 @@ import Scroll from "iscroll"
                 for(var i=0;i<arr.length;i++){
                     arr[i].flag=!arr[i].flag
                     arr[i].flag2=false
+                }
+            },
+            changeBox:function(m){
+                if(m==0){
+                    this.flag=false;
+                    this.iscroll.refresh();
+                }else{
+                    this.flag=true;
+                    this.iscroll.refresh();
                 }
             }
         }
