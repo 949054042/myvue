@@ -53,7 +53,7 @@
                                 <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                     <div class='listNumber'>
                                         <h4 v-show='!m.flag'>{{m.listNumber}}</h4>
-                                         <input type='radio' v-show='m.flag' :name='m.name'/>
+                                         <input type='radio' v-show='m.flag' :id='m.name'/>
                                          <label v-show='m.flag' :for='m.name' :class='{active:m.flag2}' @click='m.flag2=!m.flag2'>
                                              <div class='radio'>
                                                  <img src='../assets/icon/true_01.png' alt='选中'/>
@@ -84,7 +84,12 @@
                                 <li class='clearfix' v-for="(m,n) in listArr" v-bind:key="n">
                                     <div class='listNumber'>
                                         <h4 v-show='!m.flag'>{{m.listNumber}}</h4>
-                                         <input type='radio' v-show='m.flag'/>
+                                         <input type='radio' v-show='m.flag' :id='m.name'/>
+                                         <label v-show='m.flag' :for='m.name' :class='{active:m.flag2}' @click='m.flag2=!m.flag2'>
+                                             <div class='radio'>
+                                                 <img src='../assets/icon/true_01.png' alt='选中'/>
+                                             </div>
+                                         </label>
                                     </div>
                                     <div class='ListDetail'>
                                         <div class='left'>
