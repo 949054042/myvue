@@ -262,6 +262,7 @@ import Scroll from "iscroll"
    .radioDetailBottom .poster{
         width:100%;
         height:7.7733rem;
+        position: relative;
     }
     .radioDetailBottom .motel{
         position: absolute;
