@@ -1,5 +1,5 @@
 <template>
-    <div class="goodSale">
+    <div class="goodSale" @click='$router.push({name:"GoodsDetail"})'>
         <div class='wrapper clearfix'>
             <div class='left'>
                 <img src='../assets/images/goods.png' alt='商品照片'/>

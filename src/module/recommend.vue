@@ -7,7 +7,6 @@
 </template>
 <script>
 import findItem_01 from "../components/findItem_01.vue"
-import Scroll from "iscroll"
 import { setTimeout } from 'timers';
     export default{
         name:"Recommend",
@@ -24,12 +23,10 @@ import { setTimeout } from 'timers';
             }
         },
         mounted:function(){
-            setTimeout(function(){
-                var iscroll=new Scroll(".Recommend",{
-                            mouseWheel: true,
-                            click:true
-                    });
-            },1000)
+            var iscroll=new Scroll(".Recommend",{
+                mouseWheel: true,
+                click:true
+            });
         },
         components:{
             findItem_01
@@ -46,7 +43,7 @@ import { setTimeout } from 'timers';
         box-sizing:border-box;
         top:2.1rem;
         left:0;
-        bottom:1.2933rem;
+        bottom:1.307rem;
         width:100%;
         z-index:1;
     }
