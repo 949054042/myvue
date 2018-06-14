@@ -1,7 +1,6 @@
 <template>
     <div class="findItem5" @click='$router.push({name:"VideoDetail"})'>
         <div class="left">
-            <!-- <video-player    :options="playerOptions"  :playsinline="true"  ref="videoPlayer"/> -->
             <img src='../assets/images/video_poster.png' alt='封面'/>
         </div>
         <div class="right">
