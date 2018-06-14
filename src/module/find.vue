@@ -20,9 +20,6 @@ import Header from "../components/searchBar";
 
         },
         mounted:function(){
-            this.$router.push({
-                name:"Recommend"
-            })
         },
         computed:{
 
@@ -34,6 +31,11 @@ import Header from "../components/searchBar";
         },
         components:{
             Header
+        },
+        mounted:function(){
+            this.$router.push({
+                name:"Recommend"
+            })
         },
         methods:{
             follow:function(m){

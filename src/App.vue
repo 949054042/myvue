@@ -90,6 +90,11 @@ export default {
         })
       }
     }
+  },
+  mounted:function(){
+    this.$router.push({
+      name:"Recommend"
+    })
   }
 }
 </script>
