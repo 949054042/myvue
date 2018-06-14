@@ -14,6 +14,7 @@ import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css'
 import 'swiper/dist/css/swiper.min.css';
 import 'video.js/dist/video-js.css'
+import hammer from './assets/js/hammer-v2.0.8.min'
 import VueVideoPlayer from "vue-video-player"
 Vue.use(Mint);
 Vue.use(VueVideoPlayer);

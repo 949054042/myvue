@@ -15,7 +15,13 @@
             </div>
         </div>
         <div  class="box_02">
-            <div class="module_01">
+            <div class="module_01 module_02">
+                <findItem7/>
+            </div>
+        </div>
+        <div  class="box_02">
+            <div class="module_01 module_02">
+                <findItem8/>
             </div>
         </div>
     </div>
@@ -26,6 +32,8 @@ import findTabBar from "../components/findTabBar"
 import findItem3 from "../components/findItem_03"
 import findItem4 from "../components/findItem_04"
 import findItem5 from "../components/findItem_05"
+import findItem7 from "../components/findItem_07"
+import findItem8 from "../components/findItem_08"
     export default{
         name:"findItem_01",
         props:[],
@@ -40,7 +48,9 @@ import findItem5 from "../components/findItem_05"
             findTabBar,
             findItem3,
             findItem4,
-            findItem5 
+            findItem5,
+            findItem7,
+            findItem8
         },
         data:function(){
             return {
@@ -77,5 +87,8 @@ import findItem5 from "../components/findItem_05"
     .module_01{
         padding:0px 0.16rem;
         padding-top:0.4rem;
+    }
+    .module_02{
+        padding-bottom:0.4rem;
     }
 </style>
