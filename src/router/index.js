@@ -9,6 +9,7 @@ import Recommend from '../module/recommend'
 // const MusicList= ()=>import("../components/musicList");
 const MusicList = r => require.ensure([], () => r(require('../components/musicList')), 'MusicList')//异步加载组件
 const RadioList = r => require.ensure([], () => r(require('../components/radioList')), 'RadioList')//异步加载组件
+const VideoDetail = r => require.ensure([], () => r(require('../components/videoDetail')), 'RadioList')//异步加载组件
 import RadioStation from '../module/radioStation'
 Vue.use(Router)
 
@@ -60,6 +61,10 @@ export default new Router({
       path: '/RadioList',
       name: 'RadioList',
       component: RadioList
+    },{
+      path: '/VideoDetail',
+      name: 'VideoDetail',
+      component:VideoDetail
     }
   ]
 })

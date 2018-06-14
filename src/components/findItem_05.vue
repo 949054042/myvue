@@ -1,7 +1,8 @@
 <template>
-    <div class="findItem5">
+    <div class="findItem5" @click='$router.push({name:"VideoDetail"})'>
         <div class="left">
-            <video-player    :options="playerOptions"  :playsinline="true"  ref="videoPlayer"/>
+            <!-- <video-player    :options="playerOptions"  :playsinline="true"  ref="videoPlayer"/> -->
+            <img src='../assets/images/video_poster.png' alt='封面'/>
         </div>
         <div class="right">
             <div class="title">
@@ -158,5 +159,9 @@
            height:0.2133rem;
            float:right;
             margin-top: 0.165rem;
+        }
+        .findItem5 .left img{
+            width:3.1733rem;
+            height:3.1866rem;
         }
 </style>
