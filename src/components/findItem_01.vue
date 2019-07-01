@@ -2,7 +2,7 @@
     <div class="findItem_01">
         <swiper/>
         <findTabBar/>
-        <div class="box_01">
+        <div class="box_01 2">
             <div class="module_01">
                 <findItem3/>
                 <findItem3/>
