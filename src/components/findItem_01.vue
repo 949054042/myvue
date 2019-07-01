@@ -61,6 +61,7 @@ import findItem8 from "../components/findItem_08"
             this.$router.push({
                 
             })
+            console.log(9)
         },
         methods:{
 
